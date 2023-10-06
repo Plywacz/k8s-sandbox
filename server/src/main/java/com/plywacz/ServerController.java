@@ -6,10 +6,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/products")
-class Controller {
+class ServerController {
     private final UserService userService;
 
-    Controller(final UserService userService) {
+    ServerController(final UserService userService) {
         this.userService = userService;
     }
 

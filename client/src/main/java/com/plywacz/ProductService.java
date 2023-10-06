@@ -13,7 +13,7 @@ class ProductService {
         this.client = client;
     }
 
-    Flux<ProcessedProductDto> processUsers() {
+    Flux<ProcessedProductDto> getProcessedProducts() {
         return client.allProducts().map(ProductService::processProducts);
     }
 

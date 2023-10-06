@@ -6,17 +6,17 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 
 @RestController
-@RequestMapping("/api/client")
-class Controller {
+@RequestMapping("/api/processedProducts")
+class ClientController {
     private final ProductService productService;
 
-    Controller(final ProductService productService) {
+    ClientController(final ProductService productService) {
         this.productService = productService;
     }
 
     @GetMapping
-    Flux<ProcessedProductDto> hello() {
-        return productService.processUsers();
+    Flux<ProcessedProductDto> processedProducts() {
+        return productService.getProcessedProducts();
     }
 
 }
