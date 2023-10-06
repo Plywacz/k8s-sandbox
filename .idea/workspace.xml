@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e5bbcd9-bc0d-4b10-89b3-cd915ac0094a" name="Changes" comment="init commit">
+    <list default="true" id="4e5bbcd9-bc0d-4b10-89b3-cd915ac0094a" name="Changes" comment="established basic server app with db connection">
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/plywacz/Client.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/src/main/java/com/plywacz/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runDB.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/plywacz/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/plywacz/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/plywacz/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/plywacz/UserRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/plywacz/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/plywacz/ProcessedProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/plywacz/ProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/plywacz/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,8 +91,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ServerApp" />
         <item itemvalue="Application.ClientApp" />
+        <item itemvalue="Application.ServerApp" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696589802825</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="established basic server app with db connection">
+      <created>1696594000680</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696594000681</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +135,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="established basic server app with db connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="established basic server app with db connection" />
   </component>
 </project>
