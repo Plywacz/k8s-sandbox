@@ -6,6 +6,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/products")
+@CrossOrigin(origins = {"http://localhost:8081", "http://client:8080"})
 class ServerController {
     private final UserService userService;
 

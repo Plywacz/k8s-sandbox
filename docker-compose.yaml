@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  # Database service (example: PostgreSQL)
+  database:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: k8sDb
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"  # Map host port 5432 to container port 5432
+
+  # Spring Server service
+  server:
+    image: server:1.0.0
+    ports:
+      - "8080:8080"  # Map host port 8080 to container port 8080
+    depends_on:
+      - database  # Ensure the database service is started first
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://database:5432/k8sDb
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: admin
+      SERVER_PORT: 8080
+
+  # Spring Client service
+  client:
+    image: client:1.0.0
+    ports:
+      - "8081:8081"  # Map host port 8081 to container port 8081
+    depends_on:
+      - server  # Ensure the Spring Server service is started first
+    environment:
+      SERVER_URL: http://server:8080  # Use the service name as the hostname
+      SERVER_PORT: 8081
