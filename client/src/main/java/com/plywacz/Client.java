@@ -11,7 +11,6 @@ import reactor.core.publisher.Flux;
 class Client {
     public static final String API_PRODUCTS = "api/products";
     private final WebClient webClient;
-
     private final String serverUrl;
 
     Client(@Value("${server.url}") String serverUrl) {
@@ -20,7 +19,7 @@ class Client {
     }
 
     Flux<ProductDto> allProducts() {
-        log.info("GET -> " + serverUrl + API_PRODUCTS);
+        log.info("GET -> " + serverUrl + "/" + API_PRODUCTS);
 
         return webClient.get()
                 .uri(API_PRODUCTS)

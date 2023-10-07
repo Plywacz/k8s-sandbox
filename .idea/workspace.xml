@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e5bbcd9-bc0d-4b10-89b3-cd915ac0094a" name="Changes" comment="added cors to allow traffic requests from client to server">
-      <change afterPath="$PROJECT_DIR$/dockerUpdateImages.sh" afterDir="false" />
+    <list default="true" id="4e5bbcd9-bc0d-4b10-89b3-cd915ac0094a" name="Changes" comment="added cors to allow traffic requests from client to server, fixed URL problems">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/com/plywacz/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/plywacz/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerUpdateImages.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dockerUpdateImages.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runDB.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/runDB.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runMicroService.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/runMicroService.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +62,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.plywacz" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programowanie\Projekty\k8s\scripts" />
     </key>
   </component>
   <component name="RunManager" selected="Application.ClientApp">
@@ -142,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696677853967</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added cors to allow traffic requests from client to server, fixed URL problems">
+      <created>1696686201004</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696686201004</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +172,7 @@
     <MESSAGE value="impl client app" />
     <MESSAGE value="renamed controllers" />
     <MESSAGE value="added cors to allow traffic requests from client to server" />
-    <option name="LAST_COMMIT_MESSAGE" value="added cors to allow traffic requests from client to server" />
+    <MESSAGE value="added cors to allow traffic requests from client to server, fixed URL problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="added cors to allow traffic requests from client to server, fixed URL problems" />
   </component>
 </project>
