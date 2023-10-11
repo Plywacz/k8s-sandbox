@@ -1,6 +1,7 @@
 package com.plywacz;
 
 import com.google.common.collect.Lists;
+import jakarta.transaction.Transactional;
 import lombok.val;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +22,7 @@ public class UserService {
                 .toList();
     }
 
+    @Transactional(rollbackOn = Exception.class)
     ProductDto createUser(final ProductDto productDto) {
         val savedUser = userRepo.save(toUser(productDto));
         return toUserDto(savedUser);

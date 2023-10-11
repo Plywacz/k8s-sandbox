@@ -15,12 +15,12 @@ class ServerController {
     }
 
     @GetMapping
-    List<ProductDto> allUsers() {
+    List<ProductDto> getAllProducts() {
         return userService.getAllUsers();
     }
 
     @PostMapping
-    ProductDto createUser(@RequestBody ProductDto productDto) {
+    ProductDto createProduct(@RequestBody ProductDto productDto) {
         return userService.createUser(productDto);
     }
 }
