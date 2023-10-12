@@ -1,0 +1,21 @@
+minikube start
+minikube stop
+minikube status
+minikube ip # IP address of the Minikube virtual machine (VM)
+
+kubectl cluster-info #ip of local cluster
+
+kubectl get namespaces
+kubectl create namespace your-namespace-name
+kubectl config set-context --current --namespace=your-namespace-name
+kubectl config current-context
+kubectl config view --minify | grep namespace # current namespace
+
+kubectl get all #all running entities
+
+kubectl apply -f server.yaml #apply particular file
+kubectl delete -f server.yaml # deletes (means stops) entities created by apply -f server.yaml
+
+kubectl exec -it <pod-name> -- /bin/sh # run terminal in pod
+
+minikube service {service-name} #open tunnel -> expose service to localhost for example postman, then use opened tunnel for requests

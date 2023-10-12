@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e5bbcd9-bc0d-4b10-89b3-cd915ac0094a" name="Changes" comment="added cors to allow traffic requests from client to server, fixed URL problems">
+    <list default="true" id="4e5bbcd9-bc0d-4b10-89b3-cd915ac0094a" name="Changes" comment="added transaction on product save">
+      <change afterPath="$PROJECT_DIR$/k8s/client.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/postgres.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/scripts.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/server.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/k8s cheatsheet.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/plywacz/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/plywacz/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerUpdateImages.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dockerUpdateImages.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runDB.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/runDB.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runMicroService.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/runMicroService.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "last_opened_file_path": "D:/Programowanie/Projekty/playground",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -152,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696686201004</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added transaction on product save">
+      <created>1697034713651</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697034713651</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +183,7 @@
     <MESSAGE value="renamed controllers" />
     <MESSAGE value="added cors to allow traffic requests from client to server" />
     <MESSAGE value="added cors to allow traffic requests from client to server, fixed URL problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="added cors to allow traffic requests from client to server, fixed URL problems" />
+    <MESSAGE value="added transaction on product save" />
+    <option name="LAST_COMMIT_MESSAGE" value="added transaction on product save" />
   </component>
 </project>
