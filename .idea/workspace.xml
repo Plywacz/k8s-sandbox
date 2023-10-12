@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e5bbcd9-bc0d-4b10-89b3-cd915ac0094a" name="Changes" comment="added transaction on product save">
-      <change afterPath="$PROJECT_DIR$/k8s/client.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/postgres.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/scripts.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/server.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/k8s cheatsheet.yaml" afterDir="false" />
+    <list default="true" id="4e5bbcd9-bc0d-4b10-89b3-cd915ac0094a" name="Changes" comment="added basic k8s files to run app on minikube">
+      <change afterPath="$PROJECT_DIR$/k8s/postgres-pv.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/postgres-pvc.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/postgres.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/postgres.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/scripts.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/k8s cheatsheet.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/k8s cheatsheet.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,24 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "last_opened_file_path": "D:/Programowanie/Projekty/playground",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programowanie/Projekty/playground&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "PLAIN_TEXT"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;PLAIN_TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.plywacz" />
@@ -162,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697034713651</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added basic k8s files to run app on minikube">
+      <created>1697115483286</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697115483286</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +190,7 @@
     <MESSAGE value="added cors to allow traffic requests from client to server" />
     <MESSAGE value="added cors to allow traffic requests from client to server, fixed URL problems" />
     <MESSAGE value="added transaction on product save" />
-    <option name="LAST_COMMIT_MESSAGE" value="added transaction on product save" />
+    <MESSAGE value="added basic k8s files to run app on minikube" />
+    <option name="LAST_COMMIT_MESSAGE" value="added basic k8s files to run app on minikube" />
   </component>
 </project>

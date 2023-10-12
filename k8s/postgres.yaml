@@ -22,6 +22,14 @@ spec:
               value: admin
             - name: POSTGRES_PASSWORD
               value: admin
+          volumeMounts:
+            - name: postgres-storage
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: postgres-storage
+          persistentVolumeClaim:
+            claimName: postgres-pvc # Should match the name of your PVC
+
 ---
 apiVersion: v1
 kind: Service

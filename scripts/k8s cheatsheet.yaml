@@ -3,6 +3,11 @@ minikube stop
 minikube status
 minikube ip # IP address of the Minikube virtual machine (VM)
 
+minikube ssh # run terminal in minikube cluster
+
+minikube service {service-name} #open tunnel -> expose service to localhost for example postman, then use opened tunnel for requests
+
+
 kubectl cluster-info #ip of local cluster
 
 kubectl get namespaces
@@ -15,7 +20,7 @@ kubectl get all #all running entities
 
 kubectl apply -f server.yaml #apply particular file
 kubectl delete -f server.yaml # deletes (means stops) entities created by apply -f server.yaml
+kubectl apply -f . #apply on every file in current dir
 
 kubectl exec -it <pod-name> -- /bin/sh # run terminal in pod
-
-minikube service {service-name} #open tunnel -> expose service to localhost for example postman, then use opened tunnel for requests
+kubectl logs <pod-name> # logs of pod
