@@ -24,3 +24,5 @@ kubectl apply -f . #apply on every file in current dir
 
 kubectl exec -it <pod-name> -- /bin/sh # run terminal in pod
 kubectl logs <pod-name> # logs of pod
+
+kubectl scale deployment my-deployment --replicas=0 # restart deployment's pod
