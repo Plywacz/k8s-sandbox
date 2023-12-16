@@ -7,6 +7,7 @@ minikube ssh # run terminal in minikube cluster
 
 minikube service {service-name} #open tunnel -> expose service to localhost for example postman, then use opened tunnel for requests
 
+minikube image load #if kubectl apply doesn't see local docker image, use this
 
 kubectl cluster-info #ip of local cluster
 
